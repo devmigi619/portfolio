@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Migi's Portfolio</title>
-    <meta name="description" content="Portfolio for world-renowned software engineer Migi">
-    <meta name="author" content="Migi">
-    <link rel="icon" type="image/png" href="imgs/favicon2.png">
-    <script src="https://kit.fontawesome.com/d1492b524a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Migi's Portfolio</title>
+	<meta name="description" content="Portfolio for world-renowned software engineer Migi">
+	<meta name="author" content="Migi">
+	<link rel="icon" type="image/png" href="imgs/favicon2.png">
+	<script src="https://kit.fontawesome.com/d1492b524a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js" defer></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <img class="logo" src="imgs/favicon.png" alt="logo">
-            <a href="#">Migi</a>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My work</li>
-            <li class="navbar__menu__item">Testimonials</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>
-    </nav>
+	<!-- Navbar -->
+	<nav id="navbar">
+		<div class="navbar__logo">
+			<img class="logo" src="imgs/favicon.png" alt="logo">
+			<a href="#">Migi</a>
+		</div>
+		<ul class="navbar__menu">
+			<li class="navbar__menu__item">Home</li>
+			<li class="navbar__menu__item">About</li>
+			<li class="navbar__menu__item">Skills</li>
+			<li class="navbar__menu__item">My work</li>
+			<li class="navbar__menu__item">Testimonials</li>
+			<li class="navbar__menu__item">Contact</li>
+		</ul>
+	</nav>
 
-    <!-- Home -->
-    <section id="home">
-        <img src="imgs/mk.JPG" alt="Migi's photo" class="home__avatar">
-        <h1 class="home__title">Hello, <br />I'm Migi</h1>
-        <h2 class="home__description">최고의 문구, 독창적이고 날 잘 나타내는, 시드니에서 경력은 없지만 시드니에 거주하고 있다는 걸 강조했었음.\</h2>
-        <button class="home__contact">Contact Me</button>
-    </section>
+	<!-- Home -->
+	<section id="home">
+		<img src="imgs/mk.JPG" alt="Migi's photo" class="home__avatar">
+		<h1 class="home__title">Hello, <br />I'm Migi</h1>
+		<h2 class="home__description">최고의 문구, 독창적이고 날 잘 나타내는, 시드니에서 경력은 없지만 시드니에 거주하고 있다는 걸 강조했었음.</h2>
+		<button class="home__contact">Contact Me</button>
+	</section>
 
-    <!-- About -->
-    <section id="about">
+	<!-- About -->
+	<section class="about">
+		<h1>About me</h1>
+		<p>마음껏 적어보기</p>
+		<div class="about__majors">
+			<div class="major">
+				<div class="major__icon"><i class="fab fa-html5"></i></div>
+				<div class="major__title">Front-end</div>
+				<div class="major__description">HTML, CSS, JavaScript, TypeScript, React, Web APIs</div>
+			</div>
+			<div class="major">
+				<div class="major__icon"><i class="fas fa-server"></i></div>
+				<div class="major__title">Back-end</div>
+				<div class="major__description">Java, Python, NodeJs, Rest APIs, MySQL</div>
+			</div>
+			<div class="major">
+				<div class="major__icon"><i class="fab fa-css3"></i></div>
+				<div class="major__title">아직 미정</div>
+				<div class="major__description">아직 미정</div>
+			</div>
+		</div>
+		<div class="about__schools">
+			<div class="job">
+				<img src="" alt="" class="job__logo">
+				<p class="job__name"></p>
+				<p class="job__period"></p>
+			</div>
+			<div class="job">
+				<img src="" alt="" class="job__logo">
+				<p class="job__name"></p>
+				<p class="job__period"></p>
+			</div>
+		</div>
+	</section>
 
-    </section>
+	<!-- Skills -->
+	<section id="skills"></section>
 
-    <!-- Skills -->
-    <section id="skills"></section>
+	<!-- Work -->
+	<section id="work"></section>
 
-    <!-- Work -->
-    <section id="work"></section>
+	<!-- Testimonials -->
+	<section id="testimonials"></section>
 
-    <!-- Testimonials -->
-    <section id="testimonials"></section>
-
-    <!-- Contact -->
-    <section id="contact"></section>
+	<!-- Contact -->
+	<section id="contact"></section>
 </body>
 </html>
