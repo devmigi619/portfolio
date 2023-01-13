@@ -6,11 +6,6 @@
     height: 25px;
 }
 
-.home__avatar{
-    width: 300px;
-    height: 200px;
-}
-
 /* Global */
 :root {
     /* Color */
@@ -141,7 +136,7 @@ h3{
 .home__avatar {
     width: 250px;
     height: 200px;
-    border-radius: 30%;
+    border-radius: 50%;
     border: 2px solid var(--color-light-white);
 }
 
@@ -325,6 +320,8 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .project {
@@ -377,4 +374,46 @@ h3{
     margin-left: -12px;
     margin-top: 8px;
     background-color: var(--color-light-white);
+}
+
+/* Testimonial */
+#testimonials {
+    background-color: var(--color-light-white);
+}
+
+.testimonials {
+    margin: 40px;
+}
+
+.testimonial {
+    display: flex;
+    margin: 32px;
+}
+
+.testimonial__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.testimonial__avatar:nth-child(odd) {
+    margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even) {
+    margin-left: 40px;
+}
+
+.testimonial__speech-bubble {
+    padding: 18px;
+    background-color: var(--color-white);
+    border-radius: var(--size-border-radius);
+}
+
+.testimonial__speech-bubble p {
+    color: var(--color-light-grey);
+}
+
+.testimonial__speech-bubble a {
+    color: var(--color-pink);
 }
