@@ -171,6 +171,13 @@ h3{
     padding: 8px 12px;
     border: 2px solid var(--color-white);
     border-radius: 4px;
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+.home__contact:hover {
+    color: var(--color-black);
+    transform: scale(1.1);
+    border: 1px solid var(--color-black);
 }
 
 /* Section common */
@@ -246,7 +253,7 @@ h3{
 /* Skill */
 
 #skills {
-    background-color: var(--color-yellow);
+    background-color: lightgreen;
 }
 
 .skillset {
@@ -312,7 +319,7 @@ h3{
 }
 
 .category__btn.active, .category__btn:hover {
-    background-color: var(--color-pink);
+    background-color: lightgreen;
     color: var(--color-white);
 }
 
@@ -440,7 +447,7 @@ h3{
 
 /* Contact */
 #contact {
-    background-color: var(--color-pink);
+    background-color: lightgreen;
 }
 
 .contact__title, .contact__email, .contact__rights {
