@@ -387,6 +387,7 @@ h3{
 
 .testimonial {
     display: flex;
+    justify-content: space-evenly;
     margin: 32px;
 }
 
@@ -443,5 +444,4 @@ h3{
 .contact__links i:hover {
     transform: scale(1.1);
     color: var(--color-yellow);
-
 }
