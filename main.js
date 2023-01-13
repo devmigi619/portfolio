@@ -19,7 +19,14 @@ navbarMenu.addEventListener('click', (event) =>{
   if (link == null) {
     return;
   }
-scrollIntoView(link);
+  navbarMenu.classList.remove('open');
+  scrollIntoView(link);
+})
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 })
 
 // Handle click on "contact me" button on home
@@ -79,7 +86,6 @@ target.classList.add('selected');
   }, 300);
 })
 
-// Active
 
 // scrolling to specific location on the page
 function scrollIntoView(selector) {
