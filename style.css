@@ -70,7 +70,6 @@ button {
     padding: 0;
 }
 
-
 /* Typography */
 h1 {
     font-size: var(--font-large);
@@ -128,6 +127,10 @@ h3{
     cursor: pointer;
     border: 1px, solid, white;
     border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+    border: 1px solid var(--color-white);
 }
 
 .navbar__menu__item:hover {
@@ -254,7 +257,6 @@ h3{
 }
 
 /* Skill */
-
 #skills {
     background-color: lightgreen;
 }
