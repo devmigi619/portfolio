@@ -53,6 +53,19 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// Copy email address when clicked
+const email = document.querySelector(".contact__email");
+email.addEventListener("click", () => {
+  const text = email.textContent;
+  const textarea = document.createElement("textarea");
+  textarea.textContent = text;
+  document.body.append(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  window.alert("Copied");
+  textarea.remove();
+});
+
 // Handle click on the "arrow up" button
 arrowUp.addEventListener("click", () => {
   scrollIntoView("#home");
