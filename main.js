@@ -109,7 +109,7 @@ const sectionIds = [
   "#about",
   "#skills",
   "#work",
-  "#testimonials",
+  // "#testimonials",
   "#contact",
 ];
 const sections = sectionIds.map((id) => document.querySelector(id));
@@ -159,11 +159,10 @@ window.addEventListener("wheel", () => {
   if (window.scrollY === 0) {
     selectedNavIndex === 0;
   } else if (
-    Math.round(window.scrollY + window.innerHeight) >=
+    window.scrollY + window.innerHeight + 300 >=
     document.body.clientHeight
   ) {
     selectedNavIndex === navItems.length - 1;
-    console.log(window.scrollY);
   }
   selectNavItem(navItems[selectedNavIndex]);
 });
