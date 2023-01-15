@@ -1,9 +1,9 @@
 /* Personal codes */
 .logo {
   background-color: transparent;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  border-radius: 30%;
+  width: 25px;
+  height: 25px;
 }
 
 /* Global */
@@ -20,7 +20,10 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
-  --color-green: green;
+  --color-light-green: #83c67f;
+  --color-deep-green: green;
+  --color-green: #369307;
+  --color-olive-green: #7c9307;
 
   /* Font size */
   --font-large: 48px;
@@ -100,19 +103,20 @@ h3 {
   justify-content: space-between;
   background-color: transparent;
   align-items: center;
-  padding: 16px;
+  padding: 2px 20px;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-green);
-  padding: 8px;
+  padding: 0px 20px;
 }
 
 .navbar__menu {
   display: flex;
   color: var(--color-black);
+  font-weight: var(--weight-semi-bold);
 }
 
 .navbar__logo {
@@ -125,7 +129,7 @@ h3 {
   margin: 0 4px;
   color: black;
   cursor: pointer;
-  border: 1px, solid, white;
+  border: 1px, solid, var(--color-black);
   border-radius: var(--size-border-radius);
 }
 
@@ -136,7 +140,7 @@ h3 {
 .navbar__menu__item:hover {
   border: white;
   border-radius: var(--size-border-radius);
-  background-color: darkolivegreen;
+  background-color: var(--color-olive-green);
 }
 
 .navbar__toggle-btn {
@@ -161,6 +165,13 @@ h3 {
   height: 250px;
   border-radius: 30%;
   border: 2px solid var(--color-light-white);
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.home__avatar:hover {
+  transform: scale(1.8);
+  border-radius: 10%;
+  border: none;
 }
 
 .home__title,
@@ -180,7 +191,6 @@ h3 {
 }
 
 .home__contact:hover {
-  background-color: olive;
   color: var(--color-black);
   transform: scale(1.1);
   border: 1px solid var(--color-black);
@@ -223,8 +233,8 @@ h3 {
 }
 
 .major__icon:hover i {
-  color: var(--color-pink);
-  transform: rotate(-30deg) scale(1.8);
+  color: var(--color-deep-green);
+  transform: rotate(-20deg) scale(1.6);
 }
 
 .major__title,
