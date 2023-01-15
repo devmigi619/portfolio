@@ -347,8 +347,9 @@ h3 {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 6px;
 }
+
 .category__count {
   background-color: var(--color-orange);
   border-radius: 50%;
@@ -359,7 +360,7 @@ h3 {
   display: inline-block;
   position: absolute;
   top: -40px;
-  right: 16px;
+  right: 15px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -371,12 +372,12 @@ h3 {
   max-width: 1200px;
   margin: auto;
   opacity: 1;
-  /* transition: all var(--animation-duration) ease-out; */
+  transition: all var(--animation-duration) ease-out;
 }
 
 .work__projects.anim-out {
   opacity: 0.6;
-  transform: scale(0.96) translateY(50px);
+  transform: scale(0.96) translateY(60px);
 }
 
 .project {
@@ -420,7 +421,7 @@ h3 {
 }
 
 .project__description h3 {
-  color: var(--color-orange);
+  color: var(--color-deep-green);
 }
 
 .project__description h3:after {
@@ -428,7 +429,7 @@ h3 {
   display: block;
   position: relative;
   left: 50%;
-  width: 50px;
+  width: 100px;
   height: 2px;
   transform: translateX(-50%);
   margin-top: 8px;
@@ -503,8 +504,8 @@ h3 {
 }
 
 .contact__links i:hover {
-  transform: scale(1.1);
-  color: var(--color-yellow);
+  transform: scale(1.2);
+  color: plum;
 }
 
 /* Scroll */
@@ -539,9 +540,14 @@ h3 {
     --font-micro: 12px;
   }
 
+  .logo {
+    width: 18px;
+    height: 18px;
+  }
+
   .navbar__toggle-btn {
     display: block;
-    top: 16px;
+    top: 12px;
     right: 16px;
     font-size: var(--font-medium);
   }
@@ -549,11 +555,13 @@ h3 {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: green;
+    padding: 10px;
+    background-color: var(--color-green);
   }
 
   #navbar.navbar--dark {
-    padding: 16px;
+    padding: 10px;
+    background-color: var(--color-green);
   }
 
   .navbar__menu {
@@ -567,18 +575,42 @@ h3 {
     display: block;
   }
 
+  .home__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    border: 2px solid var(--color-light-white);
+    transition: all var(--animation-duration) ease-in-out;
+  }
+
+  .home__avatar:hover {
+    transform: scale(1.8);
+    border-radius: 10%;
+    border: none;
+  }
+
+  .home__contact:hover {
+    color: var(--color-white);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-white);
+    border-radius: 4px;
+  }
+
   .section {
-    padding: 16px;
+    padding: 35px;
   }
 
   .about__majors {
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 0px;
   }
 
   .major {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .skillset {
